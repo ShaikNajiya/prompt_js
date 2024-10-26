@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1st(check if a number is even or odd)
+      // Write a Javascript program that prompts the user to enter a number and alerts "Even if the number is even, or "Odd if the number is odd. Use the modulus operator to check if the number is divisble by 2.
+      // Input (via prompt): Enter a number: 7
+      // Expected Output (via alert): "Odd"
+      // Input (via prompt): Enter a number: 10
+      // Expected Output (via alert): "Even"
+      var num1 = +prompt("enter a number");
+      if (num1 % 2 == 0) {
+        alert("even");
+      } else {
+        alert("odd");
+      }
+      //2nd(compare two numbers)
+      //Question:
+      // "Greater" if the first number is greater than the second, "Equal" if both numbers are equal,
+      // "Smaller if the first number is smaller than the second.
+      // Input (via prompt):
+      // Enter the first number: 10
+      // Enter the second number: 5
+      // Expected Output (via alert): "Greater"
+      // Input (via prompt):
+      // Enter the first number: 7 Enter the second number: 7
+      // Expected Output (via alert): "Equal"
+      var value1 = +prompt("enter the first number");
+      var value2 = +prompt("enter the second number");
+      if (value1 > value2) {
+        alert(`${value1} is greater than ${value2}`);
+      } else if (value1 < value2) {
+        alert(`${value1} is smaller than ${value2}`);
+      } else {
+        alert("equal");
+      }
+      //  3rd(Driving Eligibility Check)
+      // Question:
+      // write a JavaScript program that prompts the user to enter their age and whether they have a valid driver's license (true or false). The program should alert "Can drive if the person is 18 or older and has a valid driver's license, otherwise it should alert "Cannot drive".
+      // Input (via prompt):
+      // Enter your age: 20
+      // Do you have a valid driver's License (true/false): true
+      // Expected Output (via alert); "Can drive"
+      // Input (via prompt):
+      // Enter your age: 16
+      //  Do you have a valid driver's License (true/false): true
+      // Expected Output (via alert): "Cannot drive"
+      var age = +prompt("enter your age");
+      var license = prompt("Do you have a valid driver's License(true/false):");
+      if (age >= 18 && license =="true") {
+        alert("Can drive");
+      } else {
+        alert("cannot drive");
+      }
+      // 4th (Determine if a Number is Positive, Negative, or Zero)
+      // Question:
+      // Write a JavaScript program that prompts the user to enter a number and alerts "Positive" if the number is greater than 6, "Negative" if the number is less than 8, or "Zero" if the number is 0.
+      // Input (via prompt): Enter a number: 5
+      // Expected Output (via alert): "Positive"
+      // Input (via prompt): Enter a number: -3
+      // Expected Output (via alert): "Negative"
+      // Input (via prompt): Enter a number:
+      // Expected Output (via alert): "Zero"
+      var number = +prompt("enter a number:");
+      if (number < 0) {
+        alert("negative");
+      } else if (number > 0) {
+        alert("positive");
+      } else if (number == 0) {
+        alert("zero");
+      }
+    </script>
+  </body>
+</html>
